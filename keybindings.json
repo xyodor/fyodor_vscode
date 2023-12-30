@@ -1,0 +1,115 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+u l",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+u k",
+        "command": "workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+u h",
+        "command": "workbench.explorer.fileView.focus"
+    },
+    {
+        "key": "ctrl+u j",
+        "command": "workbench.action.terminal.focus"
+    },
+    // Terminal 
+    {
+        "key": "ctrl+u t t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+u t n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+u t d",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+u t j",
+        "command": "workbench.action.terminal.focusPrevious",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+u t k",
+        "command": "workbench.action.terminal.focusNext",
+        "when": "terminalFocus"
+    },
+
+    // File Explorer
+    {
+        "key": "ctrl+f n f",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+f n d",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+f n w",
+        "command": "workbench.action.newWindow",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+f d f",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && explorerViewletFocus"
+    },
+
+    {
+        "key": "j",
+        "command": "list.focusDown",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "list.focusUp",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
+
+
+    // Editor
+
+    {
+        "key": "ctrl+u l j",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "textInputFocus"
+    },
+
+    {
+        "key": "ctrl+u l k",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "textInputFocus"
+    },
+
+    {
+        "key": "ctrl+u u",
+        "command": "undo"
+    },
+
+    {
+        "key": "ctrl+u r",
+        "command": "redo"
+    },
+
+    // EXTRA
+
+    {
+        "key": "ctrl+'",
+        "command": "cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    }
+]

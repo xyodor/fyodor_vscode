@@ -1,0 +1,39 @@
+{
+    "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "vim.leader": " ",
+    "vim.normalModeKeyBindings": [
+        { "before": ["leader", "w"], "commands": ["workbench.action.files.save"]},
+        { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"]},
+        { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"]},
+        { "before": ["leader", "q"], "commands": [":bd"]},
+        { "before": ["leader", "l"], "commands": [":bn"]},
+        { "before": ["leader", "h"], "commands": [":bp"]},
+        { "before": ["<C-o>"], "commands": ["<Esc>"]},
+        { "before": ["<C-k>"], "commands": ["editor.action.showHover"]},
+        { "before": ["K"], "commands": ["editor.action.showHover"]},
+        { "before": ["leader", "e"], "commands": ["workbench.action.toggleSidebarVisibility"]},
+
+    ],
+    "vim.visualModeKeyBindings": [
+        { "before": ["<"], "commands": ["editor.action.outdentLines"]},
+        { "before": [">"], "commands": ["editor.action.indentLines"]},
+        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"]},
+        { "before": ["K"], "commands": ["editor.action.moveLinesUpaction"]},
+        { "before": ["leader", "j"], "commands": ["editor.action.copyLinesDownAction"]},
+        { "before": ["leader", "k"], "commands": ["editor.action.copyLinesUpaction"]},
+        { "before": ["leader", "c"], "commands": ["editor.action.commentLine"]},
+        { "before": ["<C-o>"], "commands": ["<Esc>"]},
+        
+    ],
+    "vim.insertModeKeyBindings": [
+        { "before": ["<C-o>"], "after": ["<Esc>"]},
+        { "before": ["<C-k>"], "commands": ["editor.action.showHover"]},
+    ],
+    "vim.digraphs": {
+
+    },
+    "editor.fontSize": 12,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Ayu Dark Bordered"
+}
